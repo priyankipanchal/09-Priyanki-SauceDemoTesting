@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project Presentation</title>
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 1.2cm;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1a202c;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    .page {
+      page-break-after: always;
+      height: 100vh;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #2b6cb0;
+      padding-bottom: 8px;
+    }
+
+    /* BIT Baroda Logo */
+    .logo-left {
+      height: 1.67cm;
+      width: 5cm;
+      object-fit: contain;
+      object-position: left center;
+    }
+
+    /* Joint IIT-IBM Logo */
+    .logo-right {
+      height: 1.47cm;
+      width: 7cm;
+      object-fit: contain;
+      object-position: right center;
+      display: block;
+    }
+
+    .content {
+      flex-grow: 1;
+      margin-top: 15px;
+    }
+
+    h1 {
+      color: #1a365d;
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    h2 {
+      color: #2b6cb0;
+      font-size: 19px;
+      margin-top: 0;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 5px;
+    }
+
+    p,
+    li {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #2d3748;
+    }
+
+    ul {
+      margin: 8px 0 12px 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    th,
+    td {
+      border: 1px solid #cbd5e0;
+      padding: 8px 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #ebf8ff;
+      color: #2b6cb0;
+      font-weight: bold;
+    }
+
+    .title-wrap {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .info-card {
+      width: 65%;
+      margin: 30px auto 0 auto;
+      background: #f7fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 15px 25px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SLIDE 1 -->
+  <div class="page">
+    <div class="header">
+      <img src="BIT-logo.png" alt="BIT Baroda Logo" class="logo-left">
+      <img src="IBM & IIT transparent logo-BLACK.png" alt="Joint IIT-IBM Logo" class="logo-right">
+    </div>
+    <div class="content">
+      <div class="title-wrap">
+        <h1>Software Development Multi-Track Certification Program</h1>
+        <h2>Final Project Presentation - Software Testing Track</h2>
+        <p style="font-size: 17px; font-weight: bold; color: #2d3748; margin-top: 15px;">
+          Automated & Manual Testing of SauceDemo E-Commerce Platform
+        </p>
+        <div class="info-card">
+          <p><strong>Candidate Name:</strong> Priyanki Panchal</p>
+          <p><strong>Track:</strong> Software Testing</p>
+          <p><strong>Academic Collaboration:</strong> BIT Baroda in academic association with IIT Patna - Vishlesan
+            I-Hub</p>
+          <p><strong>GitHub Repository:</strong> https://github.com/priyankipanchal/09-Priyanki-SauceDemoTesting</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="page">
+    <div class="header">
+      <img src="BIT-logo.png" alt="BIT Baroda Logo" class="logo-left">
+      <img src="IBM & IIT transparent logo-BLACK.png" alt="Joint IIT-IBM Logo" class="logo-right">
+    </div>
+    <div class="content">
+      <h2>Problem Statement & Test Architecture</h2>
+      <p><strong>Problem Statement:</strong></p>
+      <ul>
+        <li>E-commerce systems require flawless execution of authentication, catalog operations, and checkout
+          transactions to ensure data consistency and customer trust.</li>
+        <li>The goal is to design an automated and manual QA verification pipeline to identify regressions, validate
+          business logic, and verify edge-case behaviors.</li>
+      </ul>
+      <p style="margin-top: 18px;"><strong>Testing Architecture & Technology Stack:</strong></p>
+      <ul>
+        <li><strong>Automation Engine:</strong> Java with Selenium WebDriver</li>
+        <li><strong>Build Tool:</strong> Apache Maven (pom.xml dependency management)</li>
+        <li><strong>Wait Strategy:</strong> Explicit Dynamic Synchronization (WebDriverWait) to prevent test flakiness
+        </li>
+        <li><strong>Environment & Tools:</strong> Windows 11, Google Chrome Browser, VS Code IDE</li>
+        <li><strong>Version Control:</strong> Incremental Git history with 15 commits on GitHub</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div class="page">
+    <div class="header">
+      <img src="BIT-logo.png" alt="BIT Baroda Logo" class="logo-left">
+      <img src="IBM & IIT transparent logo-BLACK.png" alt="Joint IIT-IBM Logo" class="logo-right">
+    </div>
+    <div class="content">
+      <h2>Test Scope, Execution & Summary Metrics</h2>
+      <p><strong>Covered Modules:</strong> User Authentication, Product Catalog & Sorting, Cart Persistence, and
+        Multi-Step Checkout Flow.</p>
+      <table>
+        <tr>
+          <th>Metric / Deliverable</th>
+          <th>Count / Status</th>
+          <th>Evaluation Details</th>
+        </tr>
+        <tr>
+          <td>Total Documented Test Cases</td>
+          <td>20</td>
+          <td>Structured across 3 distinct functional modules in the test matrix</td>
+        </tr>
+        <tr>
+          <td>Automated Test Cases</td>
+          <td>5</td>
+          <td>Fully executable Java + Selenium WebDriver scripts</td>
+        </tr>
+        <tr>
+          <td>Manual Test Cases</td>
+          <td>15</td>
+          <td>Form validation, boundary cases, and layout verification</td>
+        </tr>
+        <tr>
+          <td>Passed Test Cases</td>
+          <td>17</td>
+          <td>100% of core transactional and checkout paths passed</td>
+        </tr>
+        <tr>
+          <td>Defects Logged (Bugs)</td>
+          <td>3</td>
+          <td>Documented with reproduction steps, severity, and screenshots</td>
+        </tr>
+        <tr>
+          <td>Pass Percentage</td>
+          <td>85%</td>
+          <td>Exceeds the mandatory 60% functionality pass floor</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div class="page">
+    <div class="header">
+      <img src="BIT-logo.png" alt="BIT Baroda Logo" class="logo-left">
+      <img src="IBM & IIT transparent logo-BLACK.png" alt="Joint IIT-IBM Logo" class="logo-right">
+    </div>
+    <div class="content">
+      <h2>Defect Analysis, Challenges & Reflection</h2>
+      <p><strong>Defect Findings (Bug Reports):</strong></p>
+      <ul>
+        <li><strong>BUG_01:</strong> Locked-out error message layout misalignment on narrow mobile viewports (Severity:
+          Low).</li>
+        <li><strong>BUG_02:</strong> Missing explicit visual validation highlight on empty Postal Code field (Severity:
+          Medium).</li>
+        <li><strong>BUG_03:</strong> Incorrect product thumbnail images displayed across catalog for Problem User
+          (Severity: Medium).</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Key Challenges & Resolutions:</strong></p>
+      <ul>
+        <li>Resolved element lookup race conditions using dynamic explicit waits instead of thread sleeps.</li>
+        <li>Structured project code incrementally across 15 version-controlled commits to demonstrate full development
+          workflow.</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Conclusion:</strong> All critical workflows function correctly end-to-end;
+        documentation and deliverables align fully with certification criteria.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
