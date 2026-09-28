@@ -19,7 +19,7 @@ This repository contains the end-to-end QA validation pipeline for the **[SauceD
 
 ## 🎬 Video Recording & Demo
 Due to GitHub's 100 MB file limit, the full-length automation test execution demo video is hosted on Google Drive:
-* 🔗 **[Click Here to Watch the Automation Video Demo](PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE)**
+* 🔗 **[Click Here to Watch the Automation Video Demo](https://drive.google.com/file/d/160Y6TkshiBOaxFSh46EI5_2iForif0hW/view?usp=sharing)**
 
 ---
 
